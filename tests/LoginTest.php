@@ -10,7 +10,7 @@ class LoginTest extends WebTestCase
     public function testLogin()
     {
         $client = static::createClient();
-        $this->$client->request('GET', '/login');
+        $client->request('GET', '/login');
 
         $crawler = $client->submitForm('login', [
             '_username' => 'j.doe@mail.com',
