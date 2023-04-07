@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if app.user %}
+        <h1>Bienvenue {{app.user.firstname}}!</h1>
+    {% else %}
+        <h1>Bienvenue sur mon site !</h1>
+        <i>Veuillez-vous connecter</i>
+    {% endif %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed diam et diam rutrum dignissim sed at erat. Vivamus nec blandit velit, quis interdum lacus.</p>
+{% endblock %}
